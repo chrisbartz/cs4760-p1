@@ -1,7 +1,7 @@
 my_prog: main.o  
 	gcc -o my_prog main.o  
 
-main.o: main.cpp 
+main.o: main.c 
 	gcc -c main.c
 	
 clean:
