@@ -38,7 +38,16 @@ int main(int argc, char *argv[]) {
 	//			cvalue = optarg;
 				break;
 			default:
-				abort();
+				break;
+//				char em1[] = "Unable to recognize option: ";
+//				char em2[] = " Exiting.\n";
+//				char optchar[3];
+//				optchar[0] = '-';
+//				optchar[1] = (char) opt;
+//				optchar[2] = '\0';
+//				strcat(em1, optchar);
+//				strcat(em1, em2);
+//				perror(em1);
 			}
 	}
 

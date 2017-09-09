@@ -2,3 +2,44 @@
 //cyb01b
 //CS4760 S02
 //Project 1
+
+1. 
+
+./my_prog 2
+i:1  process ID:6901  parent ID:490  child ID:6902
+cbdev@hks:~/mnt/y/Code/cs4760/cs4760-p1$ i:2  process ID:6902  parent ID:1  child ID:0
+
+./my_prog 20
+i:1  process ID:6905  parent ID:490  child ID:6906
+i:2  process ID:6906  parent ID:6905  child ID:6907
+i:3  process ID:6907  parent ID:1  child ID:6908
+i:4  process ID:6908  parent ID:6907  child ID:6909
+i:5  process ID:6909  parent ID:1  child ID:6910
+i:6  process ID:6910  parent ID:6909  child ID:6911
+i:7  process ID:6911  parent ID:1  child ID:6912
+i:8  process ID:6912  parent ID:6911  child ID:6913
+i:9  process ID:6913  parent ID:1  child ID:6914
+i:10  process ID:6914  parent ID:6913  child ID:6915
+i:11  process ID:6915  parent ID:1  child ID:6916
+i:12  process ID:6916  parent ID:6915  child ID:6917
+i:13  process ID:6917  parent ID:1  child ID:6918
+i:14  process ID:6918  parent ID:6917  child ID:6919
+i:15  process ID:6919  parent ID:1  child ID:6920
+i:16  process ID:6920  parent ID:6919  child ID:6921
+i:17  process ID:6921  parent ID:1  child ID:6922
+i:18  process ID:6922  parent ID:6921  child ID:6923
+i:19  process ID:6923  parent ID:1  child ID:6924
+i:20  process ID:6924  parent ID:6923  child ID:0
+
+2. 
+
+./my_prog 4
+i:1  process ID:6949  parent ID:490  child ID:6950
+i:2  process ID:6950  parent ID:1  child ID:6951
+i:3  process ID:6951  parent ID:6950  child ID:6952
+i:4  process ID:6952  parent ID:1  child ID:0
+
+6949 -> 6950 -> 6951 -> 6952
+
+3.
+
