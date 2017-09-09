@@ -5,4 +5,4 @@ main.o: main.c
 	gcc -c main.c
 	
 clean:
-	rm my_prog main.o
+	rm my_prog *.o
