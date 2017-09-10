@@ -7,7 +7,7 @@
 
 ./my_prog 2
 i:1  process ID:6901  parent ID:490  child ID:6902
-cbdev@hks:~/mnt/y/Code/cs4760/cs4760-p1$ i:2  process ID:6902  parent ID:1  child ID:0
+i:2  process ID:6902  parent ID:1  child ID:0
 
 ./my_prog 20
 i:1  process ID:6905  parent ID:490  child ID:6906
@@ -42,4 +42,53 @@ i:4  process ID:6952  parent ID:1  child ID:0
 6949 -> 6950 -> 6951 -> 6952
 
 3.
+
+When I executed for 20 processes, about half went to init.
+When I executed for 2000 processes, about half went to init.
+When I executed for 200000 processes, it terminated at around 95,000 processes, and about half went to init.
+
+4. 
+
+./my_prog 200
+i:1  process ID:1377  parent ID:32225  child ID:1378
+i:2  process ID:1378  parent ID:1377  child ID:1379
+i:4  process ID:1380  parent ID:1379  child ID:1381
+i:3  process ID:1379  parent ID:1  child ID:1380
+i:5  process ID:1381  parent ID:1  child ID:1382
+i:7  process ID:1383  parent ID:1382  child ID:1384
+i:6  process ID:1382  parent ID:1  child ID:1383
+i:8  process ID:1384  parent ID:1  child ID:1385
+i:9  process ID:1385  parent ID:1  child ID:1386
+i:11  process ID:1387  parent ID:1386  child ID:1388
+i:12  process ID:1388  parent ID:1  child ID:1389
+i:13  process ID:1389  parent ID:1  child ID:1390
+i:14  process ID:1390  parent ID:1389  child ID:1391
+i:15  process ID:1391  parent ID:1390  child ID:1392
+i:10  process ID:1386  parent ID:1385  child ID:1387
+i:17  process ID:1393  parent ID:1392  child ID:1394
+i:18  process ID:1394  parent ID:1393  child ID:1395
+i:16  process ID:1392  parent ID:1  child ID:1393
+i:19  process ID:1395  parent ID:1394  child ID:1396
+i:20  process ID:1396  parent ID:1  child ID:1397
+i:21  process ID:1397  parent ID:1  child ID:1398
+i:22  process ID:1398  parent ID:1397  child ID:1399
+i:23  process ID:1399  parent ID:1  child ID:1400
+i:24  process ID:1400  parent ID:1  child ID:1401
+i:25  process ID:1401  parent ID:1  child ID:1402
+i:26  process ID:1402  parent ID:1401  child ID:1403
+i:27  process ID:1403  parent ID:1  child ID:1404
+i:28  process ID:1404  parent ID:1403  child ID:-1
+
+5. 
+
+
+
+
+
+
+
+
+
+
+
 
