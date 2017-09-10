@@ -7,6 +7,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
 #define DEBUG 1
 
@@ -14,7 +16,7 @@ int printHelp(char *argv[], int x);
 
 int main(int argc, char *argv[]) {
 	pid_t childpid = 0;
-	int i, n, opt;
+	int i, n, opt, status;
 	int m = 1, k = 1;
 
 	//check for valid number of command-line arguments
@@ -23,7 +25,7 @@ int main(int argc, char *argv[]) {
 	}
 	if (DEBUG) printf("past args check\n");
 
-	//gather option flags 		 						//question 5
+	//gather option flags
 	while ((opt = getopt(argc, argv, "n:k:m:h")) != -1){
 			switch (opt) {
 			case 'n':
@@ -47,28 +49,29 @@ int main(int argc, char *argv[]) {
 			}
 	}
 	if (DEBUG) printf("past checkopt\n");
-	if (DEBUG) printf("m: %d\n",m);		 //question 5
-	if (DEBUG) printf("k: %d\n",k);		 //question 5
-	if (DEBUG) printf("n: %d\n",n);		 //question 5
+	if (DEBUG) printf("m: %d\n",m);
+	if (DEBUG) printf("k: %d\n",k);
+	if (DEBUG) printf("n: %d\n",n);
 
-	n = atoi(argv[1]);
+//	n = atoi(argv[1]);
 	for (i = 1; i < n; i++)
 		if (childpid = fork())
 			break;
 	//sleep(10); //question 4
 
-	for (int j = 0; j < k; j++) { //question 5
-		fprintf(stderr, "i:%d  process ID:%ld  parent ID:%ld  child ID:%ld\n", i,
-					(long) getpid(), (long) getppid(), (long) childpid);
+	for (int j = 0; j < k; j++) {
+	wait(&status);
+	fprintf(stderr, "i:%d  process ID:%ld  parent ID:%ld  child ID:%ld\n", i,
+			(long) getpid(), (long) getppid(), (long) childpid);
 		sleep(m);
-	}							//question 5
+	}
 
 	return 0;
 }
 
 int printHelp(char *argv[], int x) {
 	char errorMessage[] = "Usage: ";
-	char errorMessage2[] = " <>\n";
+	char errorMessage2[] = " <processes>\n";
 	strcat(errorMessage, argv[0]);
 	strcat(errorMessage, errorMessage2);
 

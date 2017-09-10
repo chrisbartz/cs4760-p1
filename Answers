@@ -81,9 +81,15 @@ i:28  process ID:1404  parent ID:1403  child ID:-1
 
 5. 
 
+n controls the number of child processes forked
+m will control the delay between fprintf output
+k will control how many times the process will print the fprintf output
 
+6. 
 
-
+code is getting messy so reverting back closer to lesson 3.1
+effectively it reverses the order in which the output is printed because the parent waits for the child
+it also ensures that the output is in order
 
 
 
