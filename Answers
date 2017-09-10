@@ -93,7 +93,22 @@ it also ensures that the output is in order
 
 7.
 
-when you decouple the process information, you are unable to interpret which line came from which pid
+in actual testing it looked almost the same as the previous examples except 
+I know if the system were highly utilized, it might not be the same 
+when you decouple the process information, you may be unable to interpret 
+which line came from which pid as the processes switch off
+
+i:1 process ID:13047 parent ID:12758 child ID:13048
+i:2 process ID:13048 parent ID:1 child ID:13049
+i:3 process ID:13049 parent ID:13048 child ID:13050
+i:4 process ID:13050 parent ID:1 child ID:13051
+i:5 process ID:13051 parent ID:1 child ID:13052
+i:6 process ID:13052 parent ID:1 child ID:13053
+i:7 process ID:13053 parent ID:13052 child ID:13054
+i:8 process ID:13054 parent ID:1 child ID:13055
+i:9 i:10 process ID:13055 process ID:13056 parent ID:1 child ID:13056
+parent ID:13055 child ID:0
+
 
 
 
