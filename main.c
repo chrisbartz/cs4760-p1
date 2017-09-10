@@ -60,10 +60,12 @@ int main(int argc, char *argv[]) {
 	//sleep(10); //question 4
 
 	for (int j = 0; j < k; j++) {
-	wait(&status);
-	fprintf(stderr, "i:%d  process ID:%ld  parent ID:%ld  child ID:%ld\n", i,
-			(long) getpid(), (long) getppid(), (long) childpid);
-		sleep(m);
+//	wait(&status);
+	fprintf(stderr, "i:%d ", i);
+	fprintf(stderr, "process ID:%ld ", (long) getpid());
+	fprintf(stderr, "parent ID:%ld ", (long) getppid());
+	fprintf(stderr, "child ID:%ld\n", (long) childpid);
+//		sleep(m);
 	}
 
 	return 0;

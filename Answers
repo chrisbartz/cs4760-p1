@@ -91,6 +91,9 @@ code is getting messy so reverting back closer to lesson 3.1
 effectively it reverses the order in which the output is printed because the parent waits for the child
 it also ensures that the output is in order
 
+7.
+
+when you decouple the process information, you are unable to interpret which line came from which pid
 
 
 
