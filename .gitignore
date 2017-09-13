@@ -1,0 +1,8 @@
+/Default/
+/.settings/
+/.git/
+.cproject
+.project
+.gitignore
+*.o
+my_prog
