@@ -3,4 +3,14 @@
 //CS4760 S02
 //Project 1
 
+syntax: ./my_prog <arguments>
+
+arguments:
+-h prints help
+-n # sets the number of processes to fork
+-k # number of times to print the same information
+-m # controls the delay in printing in seconds
+-w sets wait for child process
+-c # will read # chars input from each process and change the output (question 8)
+
 Source with revision control is at https://github.com/chrisbartz/cs4760-p1
