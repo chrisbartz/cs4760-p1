@@ -5,4 +5,4 @@ main.o: main.c
 	gcc -c -std=gnu99 main.c
 	
 clean:
-	rm my_prog *.o
+	rm my_prog* *.o
