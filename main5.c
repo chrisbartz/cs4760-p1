@@ -8,7 +8,7 @@
 #include <unistd.h>
 #include <string.h>
 
-#define DEBUG 1
+#define DEBUG 0
 
 int printHelp(char *argv[], int x);
 
@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
 	if (DEBUG) printf("k: %d\n",k);		 //question 5
 	if (DEBUG) printf("n: %d\n",n);		 //question 5
 
-	n = atoi(argv[1]);
+	//n = atoi(argv[1]);
 	for (i = 1; i < n; i++)
 		if (childpid = fork())
 			break;

@@ -10,7 +10,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-#define DEBUG 1
+#define DEBUG 0
 
 int printHelp(char *argv[], int x);
 

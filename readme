@@ -19,3 +19,17 @@ The project was done sequentially - all changes from question 1 should carry ove
 The book doesnt really say to start over with 3.1 for each question so that is how I did the exercises.
 I will extract each program from version control and name it main1.c for question1, main2.c for question 2, etc...
 Likewise executables my_prog1 is for question 1, my_prog2 is for question 2...
+my_prog and my_prog8 should be exactly the same since I didnt change the final source and kept my numbering scheme.
+
+I will give some example commands that should work when everything is built:
+
+1. 	./my_prog1 25
+	./my_prog1 2500
+2. 	./my_prog2 25
+3. 	./my_prog3 100000 &> output3
+4. 	./my_prog3 200 &> output4
+5. 	./my_prog5 -n 25 -k 2 -m 1
+6. 	./my_prog6 -n 25 -k 2 -m 0
+	./my_prog -n 25 -k 1 -m 0 -w
+7. 	./my_prog7 -n 25 -k 1 -m 0
+8.	./my_prog8 -n 25 -k 1 -m 0 -c 2
